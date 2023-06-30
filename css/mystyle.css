@@ -7,17 +7,20 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #2068D3;
 }
 
-nav {
+/* Header */
+
+header {
     display: flex;
     flex-flow: row wrap;
     height: 100px;
-    background: #D3D3D3;
+    background: white;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
+    margin-bottom: 5%;
 }
 
 #logo {
@@ -63,4 +66,74 @@ nav {
 
 #rede-social a{
     margin-right: 20%;
+}
+
+/* Main */
+
+main {
+    background: white;
+    padding: 200px;
+    height: 920px;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+#fileira1 {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+}
+
+#fileira2 {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+}
+
+#fileira3 {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+}
+
+div.galeria:hover {
+    border: solid 2px #2068D3;
+}
+
+div.galeria a{
+    justify-content: center;
+}
+
+div.desc {
+    text-align: center;
+}
+
+div.desc a{
+    text-decoration: none;
+    color: #2068D3;
+}
+
+section{
+    display: flex;
+    flex-flow: row wrap;
+    height: 80px;
+    background: darkblue;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section a{
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    height: 50px;
+    background: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
