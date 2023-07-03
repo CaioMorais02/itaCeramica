@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,35 +19,34 @@ body {
 header {
     display: flex;
     flex-flow: row wrap;
-    height: 100px;
+    height: 85px;
     background: white;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 5%;
 }
 
-#logo {
+.logo {
     flex: 20%;
     margin-left: 19%;
     /* border: solid 1px red; */
     text-align: left;
 }
 
-#logo h1 {
+.logo h1 {
     font-family: 'Lobster', cursive;
     color: #2068D3;
     font-size: 34px;
 }
 
-#login {
+.login {
     flex: 50%;
     /* border: solid 1px green; */ 
     text-align: right;
     padding: 20px;
 }
 
-#login a{
+.login a{
     margin-right: 34%;
     margin-left: 73%;
     color: white;
@@ -52,48 +55,58 @@ header {
     padding: 16px 20px;
 }
 
-#login a:hover{
+.login a:hover{
     color: #2068D3;
     background-color: white;
     border: solid 2px #2068D3;
 }
 
-#rede-social {
+.rede-social {
     flex: 10%;
     /* border: solid 1px black; */
     text-align: center;
 }
 
-#rede-social a{
+.rede-social a{
     margin-right: 20%;
 }
 
 /* Main */
 
 main {
-    background: white;
-    padding: 200px;
-    height: 920px;
-    margin-left: 12%;
-    margin-right: 12%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 100px);
 }
 
-#fileira1 {
+.container-main {
     display: flex;
-    flex-flow: row;
-    height: 200px;
+    flex-direction: column;
+    background-color: white;
+    align-self: center;
+    margin-top: 75px;
+    padding: 0 175px;
 }
 
-#fileira2 {
+.fileira1 {
     display: flex;
-    flex-flow: row;
-    height: 200px;
+    justify-content: space-around;
+    margin: 20px 0;
 }
 
-#fileira3 {
+.fileira2 {
     display: flex;
-    flex-flow: row;
-    height: 200px;
+    margin: 20px 0;
+}
+
+.fileira3 {
+    display: flex;
+    margin: 20px 0;
+}
+
+.galeria {
+    margin: 25px 20px;
 }
 
 div.galeria:hover {
@@ -113,6 +126,8 @@ div.desc a{
     color: #2068D3;
 }
 
+/* Section */
+
 section{
     display: flex;
     flex-flow: row wrap;
@@ -128,6 +143,8 @@ section a{
     color: white;
 }
 
+/* Footer */
+
 footer {
     display: flex;
     flex-flow: row wrap;
@@ -136,4 +153,59 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+/* Página de Compra */
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+.container-main-products {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    align-self: center;
+    padding: 50px;
+}
+
+.left-side{
+    display: flex;
+}
+
+.left-side img {
+    display: flex;
+    width: 400px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.right-side p{
+    color: #2068D3;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 25px;
+}
+
+.right-side a{
+    text-decoration: none;
+    border: solid 1px #2068D3;
+    background-color: #2068D3;
+    color: white;
+    padding: 10px;
+}
+
+.right-side a:hover {
+    color: #2068D3;
+    background-color: white;
+    border: solid 1px #2068D3;
 }
